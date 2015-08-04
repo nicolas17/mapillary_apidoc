@@ -8,9 +8,19 @@
 
 This is version 2 (v2) of the Mapillary API. Using this API you can access the vast amount of images and image sequences that are a part of Mapillary. Mapillary is a service for crowdsourcing map images using simple tools like smartphones or action cameras.
 
-The APIs use OAuth2 for authentication and enables you and your applications to perform a wide range of tasks, as users or as apps acting on behalf of users. 
+The APIs use OAuth2 for authentication and enables you and your applications to perform a wide range of tasks, as users or as apps acting on behalf of users.
 
 At the moment we do not have any bindings but we will make sure to get that going pretty soon.
+
+# Bugs
+
+## API
+
+Please report bugs on API [here](https://github.com/mapillary/mapillary_issues).
+
+## Documentation
+
+Please report bugs or send pull requests on documentation [here](https://github.com/mapillary/mapillary_apidoc).
 
 # Authentication
 
