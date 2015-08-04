@@ -5,7 +5,7 @@ language_tabs:
   - curl
 
 toc_footers:
-  - <a href='http://www.mapillary.com/map/signup'>Sign Up for a Mapillary account</a> 
+  - <a href='http://www.mapillary.com/map/signup'>Sign Up for a Mapillary account</a>
   - <a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
@@ -22,4 +22,5 @@ includes:
   - u
   - or_classes
   - errors
+  - vectortiles
 ---
