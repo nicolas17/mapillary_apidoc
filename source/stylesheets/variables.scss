@@ -1,0 +1,122 @@
+/*
+Copyright 2008-2013 Concur Technologies, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may
+not use this file except in compliance with the License. You may obtain
+a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations
+under the License.
+*/
+
+
+////////////////////////////////////////////////////////////////////////////////
+// CUSTOMIZE SLATE
+////////////////////////////////////////////////////////////////////////////////
+// Use these settings to help adjust the appearance of Slate
+
+
+
+
+$color--black: rgb(36, 37, 40);
+$color--white: rgb(253, 253, 254);
+$color--white-tinted: rgb(239, 241, 243);
+$color--grey: rgb(85, 89, 95);
+$color--grey-dark: rgb(54, 55, 60);
+
+$color--primary: rgb(53, 175, 109);
+
+// BACKGROUND COLORS
+////////////////////
+$nav-bg:                  $color--black;
+$examples-bg:             $color--black;
+$code-bg:                 $color--black;
+$code-annotation-bg:      $color--primary;
+$nav-subitem-bg:          $color--grey-dark;
+$nav-active-bg:           $color--primary;
+$lang-select-border:      $color--black;
+$lang-select-bg:          $color--grey-dark;
+$lang-select-active-bg:   $color--black;
+$lang-select-pressed-bg:  $color--black;
+$main-bg:                 $color--white-tinted;
+$aside-notice-bg:         $color--white;
+$aside-warning-bg: rgb(202, 60, 60);
+$aside-success-bg: rgb(28, 184, 65);
+$search-notice-bg: rgb(223, 117, 20);
+
+
+// TEXT COLORS
+////////////////////
+$main-text: $color--black; // main content text color
+$nav-text: $color--white;
+$nav-active-text: $color--white;
+$lang-select-text: $color--white; // color of unselected language tab text
+$lang-select-active-text: $color--white; // color of selected language tab text
+$lang-select-pressed-text: $color--white; // color of language tab text when mouse is pressed
+
+
+// SIZES
+////////////////////
+$nav-width: 230px; // width of the navbar
+$examples-width: 50%; // portion of the screen taken up by code examples
+$logo-margin: 20px; // margin between nav items and logo, ignored if search is active
+$main-padding: 28px; // padding to left and right of content & examples
+$nav-padding: 15px; // padding to left and right of navbar
+$nav-v-padding: 10px; // padding used vertically around search boxes and results
+$nav-indent: 10px; // extra padding for ToC subitems
+$code-annotation-padding: 13px; // padding inside code annotations
+$h1-margin-bottom: 21px; // padding under the largest header tags
+$tablet-width: 930px; // min width before reverting to tablet size
+$phone-width: $tablet-width - $nav-width; // min width before reverting to mobile size
+
+
+// FONTS
+////////////////////
+%default-font {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+
+%header-font {
+  @extend %default-font;
+  font-weight: bold;
+}
+
+%code-font {
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+// OTHER
+////////////////////
+$nav-active-shadow: #000;
+$nav-footer-border-color: #666;
+$nav-embossed-border-top: #000;
+$nav-embossed-border-bottom: #939393;
+$main-embossed-text-shadow: 0px 1px 0px #fff;
+$search-box-border-color: #666;
+
+
+////////////////////////////////////////////////////////////////////////////////
+// INTERNAL
+////////////////////////////////////////////////////////////////////////////////
+// These settings are probably best left alone.
+
+%break-words {
+ -ms-word-break: break-all;
+     word-break: break-all;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
