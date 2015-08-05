@@ -487,6 +487,53 @@ ims[rects][type] | Classification of match
 ims[rects][rect] | Rectangle of match in normalized coordinates (0 to 1) [North West X, North West Y, South East X, South East Y]
 ims[user] | Username of user that provided the image
 
+## GET /search/im/s/:key
+
+> /v2/search/im/s/:key
+
+```curl
+curl "https://a.mapillary.com/v2/search/im/s/uwDS-P5HcC9BfMghANb3Pw?client_id=<CLIENT_ID>"
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "ca":95.70099,
+  "captured_at":1400486721000,
+  "key":"V3HG0CMVMk4aNQj6_YFHgQ",
+  "lon":-118.369883,
+  "lat":34.095438,
+  "location":"De Longpre Avenue, L.A.",
+  "user":"gyllen"
+}
+```
+
+Search for an image giving a sequence. If a point is provied (lat, lon), closest image will be returned.
+
+### HTTP Request
+
+`GET http://a.mapillary.com/v2/search/im/s/:key`
+
+
+Parameter | Description
+--------- | -----------
+key | A sequence key to use for the search
+lat | Latitude to be close at
+lon | Longitude to be close at
+
+### Response Parameters
+
+Parameter | Description
+--------- | -----------
+ca | Angle of the image shot in degrees between 0 to 360
+captured_at | Time image was captured in EPOCH ms
+key | Key of the image
+lon | Longitude of image
+lat | Latitude of image
+location | String representation of where image was shot
+user | Username of user taken the image
+
 ## GET /search/im/geojson
 
 ```curl
