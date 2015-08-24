@@ -13,27 +13,20 @@ The number of available traffic sign classes and latest detector package version
 
 | Country | Country Code | Total | Version|
 -----|:------:|:------:|:------:|
-Australia | au | 75 | 2_0
-Brazil | br | 82 | 5_0
-Canada | ca | 86 | 2_0
-Europe | eu | 79 | 6_0
-USA | us | 84 | 3_0
+Australia | au | 75 | 2.0
+Brazil | br | 82 | 5.0
+Canada | ca | 86 | 2.0
+Europe | eu | 79 | 6.0
+USA | us | 84 | 3.0
 
-<!-- | Country (Region) | Regulatory (Prohibitory) | Warning (Danger) | Mandatory | Information | Priority | Total
------|:------:|:------:|:------:|:------:|:------:|:------:|
-Australia | 23 | 52 | 0 | 0 | - |  75
-Brazil | 29 | 46 | 5 | 2 | - |  82
-Canada | 34 | 51 | 1 | 0 | - |  86
-Europe | 30 | 24 | 16 | 4 | 4 | 78
-USA  | 28 | 55 | 1 | 0 | - | 84 | -->
 
 The traffic sign classes in each of the detector packages are listed below in details. The naming of the package follows the convention {**trafficsign**}\_{**country_code**}\_{**version**}.
 
-## trafficsign_eu_6_0
+## trafficsign_eu_6.0
 
 ### Priority
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | priority--give-way--de
 2 | priority--give-way-to-oncoming-traffic--de
 3 | priority--give-way-to-oncoming-traffic--se
@@ -43,16 +36,16 @@ The traffic sign classes in each of the detector packages are listed below in de
 
 ### Information
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | information--bus-stop--de
 2 | information--disabled-persons--de
 3 | information--parking--de
 4 | information--pedestrian-crossing--de
 
 
-### Regulatory
+### Prohibitory
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | prohibitory--maximum-height--de
 2 | prohibitory--maximum-speed-limit-10--de
 3 | prohibitory--maximum-speed-limit-100--de
@@ -88,7 +81,7 @@ The traffic sign classes in each of the detector packages are listed below in de
 
 ### Mandatory
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | mandatory--bicycles-only--de
 2 | mandatory--dual-path-cyclists-and-pedestrians--de
 3 | mandatory--dual-path-pedestrians-and-cyclists--de
@@ -112,7 +105,7 @@ The traffic sign classes in each of the detector packages are listed below in de
 
 ### Danger
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | danger--children--de
 2 | danger--children--it
 3 | danger--children--se
@@ -157,11 +150,11 @@ The traffic sign classes in each of the detector packages are listed below in de
 
 
 
-## trafficsign_ca_2_0
+## trafficsign_ca_2.0
 
 ### Regulatory
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | regulatory--maximum-speed-limit-10--ca
 2 | regulatory--maximum-speed-limit-100--ca
 3 | regulatory--maximum-speed-limit-110--ca
@@ -200,7 +193,7 @@ The traffic sign classes in each of the detector packages are listed below in de
 
 ### Warning
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | warning--bump-in-road--ca
 2 | warning--crossroads-ahead--ca
 3 | warning--crossroads-ahead--ca--ontario
@@ -267,17 +260,17 @@ The traffic sign classes in each of the detector packages are listed below in de
 
 ### Mandatory
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | mandatory--pass-on-either-side--ca
 
 
 
 
-## trafficsign_au_2_0
+## trafficsign_au_2.0
 
-### Regulatory
+### Prohibitory
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | prohibitory--maximum-speed-limit-10--au
 2 | prohibitory--maximum-speed-limit-100--au
 3 | prohibitory--maximum-speed-limit-110--au
@@ -291,21 +284,26 @@ The traffic sign classes in each of the detector packages are listed below in de
 11 | prohibitory--maximum-speed-limit-70--au
 12 | prohibitory--maximum-speed-limit-80--au
 13 | prohibitory--maximum-speed-limit-90--au
-14 | regulatory--no-bicycles--au
-15 | regulatory--no-entry--au
-16 | regulatory--no-heavy-goods-vehicles--au
-17 | regulatory--no-left-turn--au
-18 | regulatory--no-pedestrians--au
-19 | regulatory--no-right-turn--au
-20 | regulatory--no-u-turn--au
-21 | regulatory--stop--au
-22 | regulatory--yield--au
-23 | regulatory--yield-to-oncoming-traffic--au
+
+
+### Regulatory
+| Nbr | Name
+:-----:|---------------
+1 | regulatory--no-bicycles--au
+2 | regulatory--no-entry--au
+3 | regulatory--no-heavy-goods-vehicles--au
+4 | regulatory--no-left-turn--au
+5 | regulatory--no-pedestrians--au
+6 | regulatory--no-right-turn--au
+7 | regulatory--no-u-turn--au
+8 | regulatory--stop--au
+9 | regulatory--yield--au
+10 | regulatory--yield-to-oncoming-traffic--au
 
 
 ### Warning
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | warning--added-lane-left--au
 2 | warning--added-lane-right--au
 3 | warning--bump-in-road--au
@@ -365,11 +363,11 @@ The traffic sign classes in each of the detector packages are listed below in de
 
 
 
-## trafficsign_br_5_0
+## trafficsign_br_5.0
 
-### Regulatory
+### Prohibitory
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | prohibitory--maximum-speed-limit-10--br
 2 | prohibitory--maximum-speed-limit-100--br
 3 | prohibitory--maximum-speed-limit-110--br
@@ -383,36 +381,18 @@ The traffic sign classes in each of the detector packages are listed below in de
 11 | prohibitory--maximum-speed-limit-70--br
 12 | prohibitory--maximum-speed-limit-80--br
 13 | prohibitory--maximum-speed-limit-90--br
-14 | regulatory--no-bicycles--br
-15 | regulatory--no-entry--br
-16 | regulatory--no-heavy-goods-vehicles--br
-17 | regulatory--no-heavy-goods-vehicles--br--v1
-18 | regulatory--no-left-or-u-turn--br
-19 | regulatory--no-left-turn--br
-20 | regulatory--no-motor-vehicles--br
-21 | regulatory--no-motorcycles--br
-22 | regulatory--no-overtaking--br
-23 | regulatory--no-parking--br
-24 | regulatory--no-parking--br--v1
-25 | regulatory--no-pedestrians--br
-26 | regulatory--no-right-turn--br
-27 | regulatory--no-stopping--br
-28 | regulatory--no-straight-through--br
-29 | regulatory--no-u-turn--br
-30 | regulatory--stop--br
-31 | regulatory--yield--br
 
 
 ### Information
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | information--parking--br
 2 | information--two-way-traffic--br
 
 
 ### Warning
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | warning--added-lane-right--br
 2 | warning--bump-in-road--br
 3 | warning--cyclists-crossing--br
@@ -461,9 +441,32 @@ The traffic sign classes in each of the detector packages are listed below in de
 46 | warning--y-roads--br
 
 
+### Regulatory
+| Nbr | Name
+:-----:|---------------
+1 | regulatory--no-bicycles--br
+2 | regulatory--no-entry--br
+3 | regulatory--no-heavy-goods-vehicles--br
+4 | regulatory--no-heavy-goods-vehicles--br--v1
+5 | regulatory--no-left-or-u-turn--br
+6 | regulatory--no-left-turn--br
+7 | regulatory--no-motor-vehicles--br
+8 | regulatory--no-motorcycles--br
+9 | regulatory--no-overtaking--br
+10 | regulatory--no-parking--br
+11 | regulatory--no-parking--br--v1
+12 | regulatory--no-pedestrians--br
+13 | regulatory--no-right-turn--br
+14 | regulatory--no-stopping--br
+15 | regulatory--no-straight-through--br
+16 | regulatory--no-u-turn--br
+17 | regulatory--stop--br
+18 | regulatory--yield--br
+
+
 ### Mandatory
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | mandatory--bicycles-only--br
 2 | mandatory--keep-right--br
 3 | mandatory--proceed-straight--br
@@ -473,11 +476,11 @@ The traffic sign classes in each of the detector packages are listed below in de
 
 
 
-## trafficsign_us_3_0
+## trafficsign_us_3.0
 
 ### Regulatory
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | regulatory--maximum-speed-limit-10--us
 2 | regulatory--maximum-speed-limit-15--us
 3 | regulatory--maximum-speed-limit-20--us
@@ -513,7 +516,7 @@ The traffic sign classes in each of the detector packages are listed below in de
 
 ### Warning
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | warning--added-lane-from-entering-roadway--us
 2 | warning--added-lane-right--us
 3 | warning--crossroads-ahead--us
@@ -574,9 +577,8 @@ The traffic sign classes in each of the detector packages are listed below in de
 
 ### Mandatory
 | Nbr | Name
-:-----:|:---------------:
+:-----:|---------------
 1 | mandatory--pass-on-either-side--us
-
 
 
 
