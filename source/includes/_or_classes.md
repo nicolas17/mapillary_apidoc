@@ -3,9 +3,9 @@
 Mapillary detects traffic signs on images. Traffic signs are divided to 5 different categories **Regulatory** (**Prohibitory**), **Warning** (**Danger**), **Mandatory**, **Information**, **Priority** (EU only). The same traffic sign can be visually different in different countries and regions.
 In some cases, the same traffic sign class can have visual variation even in the same country/region. To handle all these, the naming of traffic signs follows the convention
 
-{**category**}--{**traffic-sign-type**}--{**country_code**}--{**variant**}.
+{**category**}\-\-{**traffic-sign-type**}\-\-{**country_code**}\-\-{**variant**}.
 
-For instance, ***warning***--***crossroads-ahead***--***ca***--***ontario*** stands for the **Ontario**-variant of **Canadian** **crossroads-ahead** sign in the **warning** category.
+For instance, ***warning***\-\-***crossroads-ahead***\-\-***ca***\-\-***ontario*** stands for the **Ontario**-variant of **Canadian** **crossroads-ahead** sign in the **warning** category.
 
 Country variation of traffic signs are handled by country(region)-specific detector packages.
 The number of available traffic sign classes and latest detector package version for each supported country(region) are summarized in the table below (Variants of a sign in the same country are counted as one class).
@@ -27,7 +27,7 @@ Canada | 34 | 51 | 1 | 0 | - |  86
 Europe | 30 | 24 | 16 | 4 | 4 | 78
 USA  | 28 | 55 | 1 | 0 | - | 84 | -->
 
-The traffic sign classes in each of the detector packages are listed below in details. The naming of the package follows the convention {**trafficsign**}_{**country_code**}_{**version**}.
+The traffic sign classes in each of the detector packages are listed below in details. The naming of the package follows the convention {**trafficsign**}\_{**country_code**}\_{**version**}.
 
 ## trafficsign_eu_6_0
 
