@@ -101,7 +101,7 @@
 30 | no-vehicles-carrying-dangerous-goods 
 
 ## MUTCD Traffic Signs (132 classes)
-Available traffic signs for each country is marked by 'x'
+Available traffic signs for each country are marked by 'x'
 
 ###Regulatory (39) 
 
