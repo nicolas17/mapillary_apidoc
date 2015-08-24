@@ -1,6 +1,6 @@
 # Object Recognition Classes
 
-## European Traffic Signs (78)
+## European Traffic Signs (78 classes)
 ### Danger (24)
 
 | Nbr | Name
@@ -100,12 +100,12 @@
 29 | no-u-turn
 30 | no-vehicles-carrying-dangerous-goods 
 
-## MUTCD Traffic Signs (132)
+## MUTCD Traffic Signs (132 classes)
 Available traffic signs for each country is marked by 'x'
 
 ###Regulatory (39) 
 
-| Nbr | Name | australia | brazil | canada | usa
+| Nbr | Name | Australia | Brazil | Canada | USA
 -----|---------------|------|------|------|------
 1 | maximum-speed-limit-10 | x | x | x | x
 2 | maximum-speed-limit-100 | x | x | x | -
@@ -148,13 +148,13 @@ Available traffic signs for each country is marked by 'x'
 39 | yield-to-oncoming-traffic | x | - | - | -
 ###Information (2) 
 
-| Nbr | Name | australia | brazil | canada | usa
+| Nbr | Name | Australia | Brazil | Canada | USA
 -----|---------------|------|------|------|------
 1 | parking | - | x | - | -
 2 | two-way-traffic | - | x | - | -
 ###Warning (85) 
 
-| Nbr | Name | australia | brazil | canada | usa
+| Nbr | Name | Australia | Brazil | Canada | USA
 -----|---------------|------|------|------|------
 1 | added-lane-from-entering-roadway | - | - | - | x
 2 | added-lane-left | x | - | - | -
@@ -243,7 +243,7 @@ Available traffic signs for each country is marked by 'x'
 85 | yield-ahead | x | - | x | x
 ###Mandatory (6) 
 
-| Nbr | Name | australia | brazil | canada | usa
+| Nbr | Name | Australia | Brazil | Canada | USA
 -----|---------------|------|------|------|------
 1 | bicycles-only | - | x | - | -
 2 | keep-right | - | x | - | -
