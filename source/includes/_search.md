@@ -195,6 +195,52 @@ ims[lat] | Latitude of image
 ims[location] | String representation of where image was shot
 ims[user] | Username of user taken the image
 
+## GET /search/im/w3w
+
+> /v2/search/im/w3w
+
+```curl
+curl "https://a.mapillary.com/v2/search/im/w3w?client_id=<CLIENT_ID>&string=bland.pylons.asserts"
+```
+
+> The above command returns JSON structured like this:
+
+```json
+  {
+    "ims" : [
+      {
+        "key":"66AuTgR_tQKBuO07rLPIWg",
+        "lon":28.357766,
+        "lat":-15.400321
+      }
+    ]
+  }
+```
+
+Get images in a specific w3w word
+
+### Scopes
+
+None
+
+### HTTP Request
+
+`GET http://a.mapillary.com/v2/search/im/w3w`
+
+Parameter | Description
+--------- | -----------
+client_id | The client id belonging to your application
+string | what3words string
+
+### Response Parameters
+
+Parameter | Description
+--------- | -----------
+ims | A list of images
+ims[key] | Key of the image
+ims[lon] | Longitude of image
+ims[lat] | Latitude of image
+
 ## GET /search/im/randomselected
 
 > /v2/search/im/randomselected
