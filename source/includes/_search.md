@@ -1333,7 +1333,7 @@ curl "https://a.mapillary.com/v2/search/u?client_id=<CLIENT_ID>&match=gyl"
 }
 ```
 
-Search for sequences return a condensed format good for listing sequences.
+Search for usernames.
 
 ### HTTP Request
 
