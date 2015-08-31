@@ -39,7 +39,7 @@ curl "https://a.mapillary.com/v2/b/UUyAhNVPHTAdOeCgJwa4dg?client_id=<CLIENT_ID>"
 }
 ```
 
-Retrive information about a specific blur.
+Retrieve information about a specific blur.
 
 ### Scopes
 
@@ -63,7 +63,7 @@ Parameter | Description
 bs | List of blurs for image
 bs[type] | Describes type of blur, face = face detected, license = license plate detected, user = user defined blur
 bs[rect] | Placement of blur as a rectangle, [SouthWest, NorthEast] -> [[x,y],[x,y]]
-user | User who decided the blur, if null its mapillary default
+user | User who decided the blur, if null it's mapillary default
 applied | True if applied false if not
 
 
@@ -85,7 +85,7 @@ curl -XPOST "https://a.mapillary.com/v2/b/UUyAhNVPHTAdOeCgJwa4dg?client_id=<CLIE
 }
 ```
 
-Approve a none approved blur.
+Approve a nonapproved blur.
 
 ### Scopes
 
@@ -119,7 +119,7 @@ curl -XPOST "https://a.mapillary.com/v2/b/UUyAhNVPHTAdOeCgJwa4dg?client_id=<CLIE
 }
 ```
 
-Reject a none approved blur.
+Reject a nonapproved blur.
 
 ### Scopes
 
