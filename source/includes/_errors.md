@@ -6,11 +6,11 @@
 
 ```curl
 200 OK - Everything worked as expected.
-400 Bad Request - Often missing a required parameters.
-401 Unauthorized - Your client_id is invalid, the oauth token is invalid, client_id and oauth token does not match.
-404 Not Found - The API does not exists, the requested object does not exist.
+400 Bad Request - Often missing required parameters.
+401 Unauthorized - Your client_id is invalid, the oauth token is invalid, client_id and oauth token do not match.
+404 Not Found - The API does not exist, the requested object does not exist.
 429 Too Many Requests - You're requesting over your limit.
-500 Internal Server Error - Something went wrong on Mapillarys servers.
+500 Internal Server Error - Something went wrong on Mapillary's servers.
 ```
 
 >
@@ -20,11 +20,11 @@ The Mapillary API uses the following HTTP error codes:
 Error Code | Meaning | Description
 ---------- | ------- | -----------
 200 | OK | Everything worked as expected.
-400 | Bad Request | Often missing a required parameters.
-401 | Unauthorized | Your client_id is invalid, the oauth token is invalid, client_id and oauth token does not match.
-404 | Not Found | The API does not exists, the requested object does not exist.
+400 | Bad Request | Often missing required parameters.
+401 | Unauthorized | Your client_id is invalid, the oauth token is invalid, client_id and oauth token do not match.
+404 | Not Found | The API does not exist, the requested object does not exist.
 429 | Too Many Requests | You're requesting over your limit.
-500 | Internal Server Error | Something went wrong on Mapillarys servers.
+500 | Internal Server Error | Something went wrong on Mapillary's servers.
 
 ## Error messages
 
