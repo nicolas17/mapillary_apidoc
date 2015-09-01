@@ -2,7 +2,7 @@
 
 > /v2/im
 
-Manage single images. For the ability to search for images see the seperate search API.
+Manage single images. For the ability to search for images see the separate search API.
 
 ## GET /im/:key
 
@@ -26,7 +26,7 @@ curl "https://a.mapillary.com/v2/im/V3HG0CMVMk4aNQj6_YFHgQ?client_id=<CLIENT_ID>
 }
 ```
 
-Retrive information about a specific image.
+Retrieve information about a specific image.
 
 ### Scopes
 
@@ -53,7 +53,7 @@ key | Key of the image
 lon | Longitude of image
 lat | Latitude of image
 location | String representation of where image was shot
-user | Username of user taken the image
+user | Username of user who uploaded the image
 
 ## GET /im/:key/geojson
 
@@ -87,7 +87,7 @@ curl "https://a.mapillary.com/v2/im/V3HG0CMVMk4aNQj6_YFHgQ/geojson?client_id=<CL
 }
 ```
 
-Retrive information about a specific image in geojson format.
+Retrieve information about a specific image in geojson format.
 
 ### Scopes
 
@@ -146,7 +146,7 @@ curl "https://a.mapillary.com/v2/im/:key/b?client_id=<CLIENT_ID>"
 }
 ```
 
-Retrive blurs for an image.
+Retrieve blurs for an image.
 
 ### Scopes
 
@@ -170,10 +170,10 @@ Parameter | Description
 bs | List of blurs for image
 bs[type] | Describes type of blur, face = face detected, license = license plate detected, user = user defined blur
 bs[rect] | Placement of blur as a rectangle, [SouthWest, NorthEast] -> [[x,y],[x,y]]
-pbs | List of requested blurs, new requests can not be done until this requested is rejected or approved
+pbs | List of requested blurs, new requests can not be done until this request is rejected or approved
 pbs[type] | Describes type of blur, user = user defined blur
 pbs[rect] | Placement of blur as a rectangle, [SouthWest, NorthEast] -> [[x,y],[x,y]]
-user | User who decided the blur, if null its mapillary default
+user | User who decided the blur, if null it's mapillary default
 requesting_user | User requesting a blur
 
 ## POST /im/:key/b
@@ -296,7 +296,7 @@ Parameter | Description
 --------- | -----------
 comment | The actual comment
 created_at | When comment was commented in EPOCH ms
-key | Uniq key of comment, this key could be used to delete comment
+key | Unique key of comment, this key could be used to delete comment
 user{} | Struct of user
 user[username] | Username of user
 user[avatar]| Link to avatar of user
@@ -360,7 +360,7 @@ curl "https://a.mapillary.com/v2/im/-l5NpA-2oGhmslXVYK6Y9g/complain?client_id=<C
 }
 ```
 
-Create a complain on an image.
+Create a complaint for an image.
 
 ### HTTP Request
 
@@ -374,7 +374,7 @@ key | Key of the image to complain on
 
 Parameter | Description
 --------- | -----------
-cm | The complain to report (a comment)
+cm | The complaint to report (a comment)
 
 ## GET /im/:key/or
 
@@ -426,7 +426,7 @@ curl "https://a.mapillary.com/v2/im/:key/or?client_id=<CLIENT_ID>"
 }
 ```
 
-Retrive recognized objects for an image.
+Retrieve recognized objects for an image.
 
 ### Scopes
 
@@ -465,10 +465,10 @@ or_rectversions[rects][type] | Type of match
 or_rectversions[rects][user_defined] | True if defined by user
 or_rectversions[timestamp] | Version and also timestamp of registred version match agains confirmations
 or_rectversions[user] | User performing detection
-or_rectversions[package] | Package feedbacking against
+or_rectversions[package] | Package feeding back against
 or_done | True if all detections are run on image
-or_packages | List of detections thats been run on image
-or_confirmed_packages[] | Conformations against detections
+or_packages | List of detections that's been run on image
+or_confirmed_packages[] | Confirmations against detections
 or_confirmed_packages[package] | Package confirmation is made against
 or_confirmed_packages[user] | User performing confirmations
 or_confirmed_packages[version] | Version of detection that is confirmed
