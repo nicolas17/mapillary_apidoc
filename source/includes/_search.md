@@ -533,6 +533,90 @@ ims[rects][type] | Classification of match
 ims[rects][rect] | Rectangle of match in normalized coordinates (0 to 1) [North West X, North West Y, South East X, South East Y]
 ims[user] | Username of user that provided the image
 
+
+## GET /search/im/or/random
+
+> /v2/search/im/or/random
+
+```curl
+curl "https://a.mapillary.com/v2/search/im/or/random?client_id=<CLIENT_ID>"
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "key": "D0OcUyPvenEDCwObI571LA",
+  "rects": [
+    {
+      "package": "trafficsign_eu_1.0",
+      "score": "0.0732049922895",
+      "type": "mandatory_keep_right",
+      "rect": [
+        0.05078125,
+        0.7291666666666666,
+        0.0732421875,
+        0.7591145833333334
+      ]
+    },
+    {
+      "package": "trafficsign_eu_1.0",
+      "score": "0.0164618917635",
+      "type": "prohibitory_speed_limit_60",
+      "rect": [
+        0.6865234375,
+        0.75,
+        0.7783203125,
+        0.8802083333333334
+      ]
+    }
+  ],
+  "orversions": [
+    {
+      "timestamp": 1437218019615,
+      "package": "trafficsign_eu_1.0",
+      "user": "hknk1",
+      "rects": []
+    }
+  ],
+  "random_type": 1
+}
+```
+
+Get a random recognized images with recognized object. Currently these are traffic signs.
+
+
+### HTTP Request
+
+`GET http://a.mapillary.com/v2/search/im/or/random`
+
+
+Parameter | Description
+--------- | -----------
+client_id | The client id of your application
+
+
+### Response Parameters
+
+Parameter | Description
+--------- | -----------
+key | Key of the image
+rects | Matches in form of rectangles
+rects[package] | Object recognition package
+rects[score] | Confidence score of match
+rects[type] | Classification of match
+rects[rect] | Rectangle of match in normalized coordinates (0 to 1) [North West X, North West Y, South East X, South East Y]
+orversions | List of recognition versions
+orversions[timestamp] | Version and also timestamp of registered version match agains confirmations
+orversions[package] | Object recognition package
+orversions[user] | user who created the version of the recognition
+orversions[rects] | Matches in form of rectangles
+orversions[rects][score] | Confidence score of match
+orversions[rects][type] | Classification of match
+orversions[rects][user_defined] | True if the object was defined by the user
+orversions[rects][rect] | Rectangle of match in normalized coordinates (0 to 1) [North West X, North West Y, South East X, South East Y]
+random_type | ????
+
 ## GET /search/im/s/:key
 
 > /v2/search/im/s/:key
