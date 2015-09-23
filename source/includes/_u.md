@@ -124,3 +124,19 @@ feed[main_description] | Main description
 feed[detail_description] | Longer and more detailed description of event
 feed[location] | Location where event happend
 feed[version] | Version of feed event
+
+## GET /u/:user/profile.png
+
+> /v2/im/:user/profile.png
+
+```curl
+curl "https://a.mapillary.com/v2/u/gyllen/profile.png?client_id=<CLIENT_ID>"
+```
+
+> The above command redirects to the users profile picture
+
+Retrive a users profile image.
+
+### HTTP Request
+
+`GET https://a.mapillary.com/v2/u/:user/profile.png`
