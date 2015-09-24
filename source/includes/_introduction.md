@@ -35,7 +35,7 @@ curl https://a.mapillary.com/v2/status?client_id=<CLIENT_ID>
 
 > Make sure to replace `<CLIENT_ID>` with your API key.
 
-Mapillary uses a client id to allow access to the API. You can register a client at your [application settings page](http://www.mapillary.com/map/settings/applications). The Mapillary API expects that the client_id parameter is present in all requests.
+Mapillary uses a client id to allow access to the API. You can register a client at your [application settings page](http://www.mapillary.com/map/settings/integrations). The Mapillary API expects that the client_id parameter is present in all requests.
 
 Like this:
 
