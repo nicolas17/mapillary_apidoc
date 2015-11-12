@@ -63,7 +63,7 @@ You can access Mapillary data through vector tiles. We are using the [Mapbox vec
 
 The data tiles have layers that you can interact with, for example to do hover animations and show basic information.
 
-The tile url pattern is:
+The tile URL pattern is:
 
 `https://d2munx5tg0hw47.cloudfront.net/tiles/{z}/{x}/{y}.mapbox`
 

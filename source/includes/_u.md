@@ -37,7 +37,7 @@ curl "https://a.mapillary.com/v2/u/gyllen?client_id=<CLIENT_ID>"
 }
 ```
 
-Retrive public information and stats about a Mapillary user.
+Retrieve public information and stats about a Mapillary user.
 
 ### Scopes
 
@@ -55,11 +55,11 @@ user | Username of user wanted for lookup
 
 Parameter | Description
 --------- | -----------
-about | Descrpitive user entered text about user
+about | Descriptive user entered text about user
 avatar | Users avatar image
 distance_all | Distance mapped in meters by user
 histogram | Users uploads the last year, day by day
-images_none_processed | Public images uploded that entered the Mapillary system but are not fully processed
+images_none_processed | Public images uploaded that entered the Mapillary system but are not fully processed
 images_hidden | Public images hidden by user
 images_all | Total amount of public images uploaded by user
 user | username
@@ -95,7 +95,7 @@ curl "https://a.mapillary.com/v2/u/gyllen/feed?client_id=<CLIENT_ID>"
 }
 ```
 
-Retrive a users feed.
+Retrieve a users feed.
 
 ### HTTP Request
 
@@ -114,15 +114,15 @@ Parameter | Description
 --------- | -----------
 feed | Array of events in the feed sorted by newest first
 feed[action] | Action or feed event
-feed[timestamp] | When event happend
-feed[object] | Type of object operetared at
+feed[timestamp] | When event happened
+feed[object] | Type of object operated at
 feed[key] | Key of object
 feed[user] | User responsible for action
 feed[other_use] | Secondary user in action
 feed[image_url] | Link to an image representing the event
 feed[main_description] | Main description
 feed[detail_description] | Longer and more detailed description of event
-feed[location] | Location where event happend
+feed[location] | Location where event happened
 feed[version] | Version of feed event
 
 ## GET /u/:user/profile.png
@@ -135,7 +135,7 @@ curl "https://a.mapillary.com/v2/u/gyllen/profile.png?client_id=<CLIENT_ID>"
 
 > The above command redirects to the users profile picture
 
-Retrive a users profile image.
+Retrieve a users profile image.
 
 ### HTTP Request
 

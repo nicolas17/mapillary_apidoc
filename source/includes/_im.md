@@ -463,7 +463,7 @@ or_rectversions[rects] | Detections in form of rectangles
 or_rectversions[rects][rect] | Rectangle of detection in normalized coordinates (0 to 1) [North West X, North West Y, South East X, South East Y]
 or_rectversions[rects][type] | Type of match
 or_rectversions[rects][user_defined] | True if defined by user
-or_rectversions[timestamp] | Version and also timestamp of registred version match agains confirmations
+or_rectversions[timestamp] | Version and also timestamp of registered version match against confirmations
 or_rectversions[user] | User performing detection
 or_rectversions[package] | Package feeding back against
 or_done | True if all detections are run on image
@@ -475,8 +475,8 @@ or_confirmed_packages[version] | Version of detection that is confirmed
 
 ## POST /im/:key/or/version
 
-Create a detected version. Not yet availble.
+Create a detected version. Not yet available.
 
 ## POST /im/:key/or/version/approve
 
-Approve a detected version. Not yet availble.
+Approve a detected version. Not yet available.
