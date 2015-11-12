@@ -41,7 +41,7 @@ curl "https://a.mapillary.com/v2/s/XXhG1IuvngsFAw-zRrk6cg?client_id=<CLIENT_ID>"
 }
 ```
 
-Retrive information about a specific sequence.
+Retrieve information about a specific sequence.
 
 ### Scopes
 
@@ -128,7 +128,7 @@ curl "https://a.mapillary.com/v2/s/XXhG1IuvngsFAw-zRrk6cg/geojson?client_id=<CLI
 }
 ```
 
-Retrive information about a specific sequence in geojson format.
+Retrieve information about a specific sequence in geojson format.
 
 ### Scopes
 

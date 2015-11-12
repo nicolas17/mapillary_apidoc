@@ -33,7 +33,7 @@ This license applies to all four versions of the photos, named "thumb-320.jpg", 
 
 Attribution should include a clearly visible link to mapillary.com or to the Mapillary photo page directly.
 
-The images are also available under other licenses for commerical use if CC BY-SA is not appropriate for the commercial usage. 
+The images are also available under other licenses for commercial use if CC BY-SA is not appropriate for the commercial usage. 
 
 Mapillary images are available using the following URL pattern:
 

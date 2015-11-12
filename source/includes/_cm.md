@@ -24,7 +24,7 @@ curl "https://a.mapillary.com/v2/cm/v-fa0oYnRnpy6vzbmGRTCQ?client_id=<CLIENT_ID>
 }
 ```
 
-Retrive information about a specific comment.
+Retrieve information about a specific comment.
 
 ### Scopes
 

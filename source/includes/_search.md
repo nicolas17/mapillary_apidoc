@@ -99,7 +99,7 @@ client_id | The client id of your application
 start_time | Start time in EPOCH ms
 end_time | End time in EPOCH ms
 project | If added show only objects for that project, if not show public
-hidden | Also show hidden images, only fot authed user though
+hidden | Also show hidden images, only for authed user though
 me | Just objects for logged in user
 user | Just objects for specific user
 min_lat | Minimum Latitude
@@ -151,7 +151,7 @@ curl "https://a.mapillary.com/v2/search/im/close?client_id=<CLIENT_ID>&lat=55.87
   }
 ```
 
-Get images close to a certain point defined my longitude, latitude, max angle, min angle and a radius in meters.
+Get images close to a certain point defined by longitude, latitude, max angle, min angle and a radius in meters.
 
 ### Scopes
 
@@ -169,7 +169,7 @@ client_id | The client id belonging to your application
 start_time | Start time in EPOCH ms
 end_time | End time in EPOCH ms
 project | If added show only objects for that project, if not show all none projects
-hidden | Also show hidden images, only fot authed user though
+hidden | Also show hidden images, only for authed user though
 me | Just objects for logged in user
 user | Just objects for specific user
 lat | Latitude to search in circle from
@@ -338,7 +338,7 @@ client_id | The client id belonging to your application
 start_time | Start time in EPOCH ms
 end_time | End time in EPOCH ms
 project | If added show only objects for that project, if not show all none projects
-hidden | Also show hidden images, only fot authed user though
+hidden | Also show hidden images, only for authed user though
 me | Just objects for logged in user
 user | Just objects for specific user
 min_lat | Minimum Latitude
@@ -397,7 +397,7 @@ curl "https://a.mapillary.com/v2/search/im/cm?client_id=<CLIENT_ID>"
 }
 ```
 
-Get all images that have atleast one comment in an area.
+Get all images that have at least one comment in an area.
 
 ### Scopes
 
@@ -415,7 +415,7 @@ client_id | The client id belonging to your application
 start_time | Start time in EPOCH ms
 end_time | End time in EPOCH ms
 project | If added show only objects for that project, if not show all none projects
-hidden | Also show hidden images, only fot authed user though
+hidden | Also show hidden images, only for authed user though
 me | Just objects for logged in user
 user | Just objects for specific user
 min_lat | Minimum Latitude
@@ -607,7 +607,7 @@ rects[score] | Confidence score of match
 rects[type] | Classification of match
 rects[rect] | Rectangle of match in normalized coordinates (0 to 1) [North West X, North West Y, South East X, South East Y]
 orversions | List of recognition versions
-orversions[timestamp] | Version and also timestamp of registered version match agains confirmations
+orversions[timestamp] | Version and also timestamp of registered version match against confirmations
 orversions[package] | Object recognition package
 orversions[user] | user who created the version of the recognition
 orversions[rects] | Matches in form of rectangles
@@ -639,7 +639,7 @@ curl "https://a.mapillary.com/v2/search/im/s/uwDS-P5HcC9BfMghANb3Pw?client_id=<C
 }
 ```
 
-Search for an image giving a sequence. If a point is provied (lat, lon), closest image will be returned.
+Search for an image given a sequence. If a point is provided (lat, lon), closest image will be returned.
 
 ### HTTP Request
 
@@ -713,7 +713,7 @@ client_id | The client id of your application
 start_time | Start time in EPOCH ms
 end_time | End time in EPOCH ms
 project | If added show only objects for that project, if not show public
-hidden | Also show hidden images, only fot authed user though
+hidden | Also show hidden images, only for authed user though
 me | Just objects for logged in user
 user | Just objects for specific user
 min_lat | Minimum Latitude
@@ -762,7 +762,7 @@ curl "https://a.mapillary.com/v2/search/im/geojson/close?client_id=<CLIENT_ID>&l
 }
 ```
 
-Get images close to a certain point defined my longitude, latitude, max angle, min angle and a radius in meters in geojson format.
+Get images close to a certain point defined by longitude, latitude, max angle, min angle and a radius in meters in geojson format.
 
 ### Scopes
 
@@ -780,7 +780,7 @@ client_id | The client id belonging to your application
 start_time | Start time in EPOCH ms
 end_time | End time in EPOCH ms
 project | If added show only objects for that project, if not show all none projects
-hidden | Also show hidden images, only fot authed user though
+hidden | Also show hidden images, only for authed user though
 me | Just objects for logged in user
 user | Just objects for specific user
 lat | Latitude to search in circle from
@@ -846,7 +846,7 @@ client_id | The client id of your application
 start_time | Start time in EPOCH ms
 end_time | End time in EPOCH ms
 project | If added show only objects for that project, if not show public
-hidden | Also show hidden images, only fot authed user though
+hidden | Also show hidden images, only for authed user though
 me | Just objects for logged in user
 user | Just objects for specific user
 min_lat | Minimum Latitude
@@ -913,7 +913,7 @@ client_id | The client id of your application
 start_time | Start time in EPOCH ms
 end_time | End time in EPOCH ms
 project | If added show only objects for that project, if not show public
-hidden | Also show hidden images, only fot authed user though
+hidden | Also show hidden images, only for authed user though
 me | Just objects for logged in user
 user | Just objects for specific user
 min_lat | Minimum Latitude
@@ -981,7 +981,7 @@ client_id | The client id of your application
 start_time | Start time in EPOCH ms
 end_time | End time in EPOCH ms
 project | If added show only objects for that project, if not show public
-hidden | Also show hidden images, only fot authed user though
+hidden | Also show hidden images, only for authed user though
 me | Just objects for logged in user
 user | Just objects for specific user
 min_lat | Minimum Latitude
@@ -1066,14 +1066,14 @@ client_id | The client id belonging to your application
 start_time | Start time in EPOCH ms
 end_time | End time in EPOCH ms
 project | If added show only objects for that project, if not show all none projects
-hidden | Also show hidden images, only fot authed user though
+hidden | Also show hidden images, only for authed user though
 me | Just objects for logged in user
 user | Just objects for specific user
 min_lat | Minimum Latitude
 max_lat | Maximum Latitude
 min_lon | Minimum Longitude
 max_lon | Maximum Longitude
-or_package | Package to search in (availble "trafficsign_eu_1.0" and "trafficsign_us_1.0")
+or_package | Package to search in (available "trafficsign_eu_1.0" and "trafficsign_us_1.0")
 or_classes[] | Arrays of classes to search for. Search are on prefix "prohibitory" will match both "prohibitory_no_parking" and "prohibitory_no_traffic_both_ways". While "prohibitory_no_parking" will only match "prohibitory_no_parking". For a list of classes see [Object Recognition Classes](/#object-recognition-classes).
 min_score | Minimal category score
 limit | Results per page in pagination
@@ -1177,7 +1177,7 @@ client_id | The client id of your application
 start_time | Start time in EPOCH ms
 end_time | End time in EPOCH ms
 project | If added show only objects for that project, if not show public
-hidden | Also show hidden images, only fot authed user though
+hidden | Also show hidden images, only for authed user though
 me | Just objects for logged in user
 user | Just objects for specific user
 min_lat | Minimum Latitude
@@ -1299,7 +1299,7 @@ client_id | The client id of your application
 start_time | Start time in EPOCH ms
 end_time | End time in EPOCH ms
 project | If added show only objects for that project, if not show public
-hidden | Also show hidden images, only fot authed user though
+hidden | Also show hidden images, only for authed user though
 me | Just objects for logged in user
 user | Just objects for specific user
 min_lat | Minimum Latitude
@@ -1371,7 +1371,7 @@ client_id | The client id of your application
 start_time | Start time in EPOCH ms
 end_time | End time in EPOCH ms
 project | If added show only objects for that project, if not show public
-hidden | Also show hidden images, only fot authed user though
+hidden | Also show hidden images, only for authed user though
 me | Just objects for logged in user
 user | Just objects for specific user
 min_lat | Minimum Latitude
@@ -1433,4 +1433,4 @@ Parameter | Description
 --------- | -----------
 matches[] | List of matched users
 matches[username] | Matched username
-matches[avatar] | If availble link to avatar of matched username
+matches[avatar] | If available link to avatar of matched username

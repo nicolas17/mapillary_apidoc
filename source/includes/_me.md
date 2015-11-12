@@ -39,15 +39,15 @@ user:email | Access to users email
 Parameter | Description
 --------- | -----------
 about | Text about user
-avatar | Url to user avatar
+avatar | URL to user avatar
 member_since | When user created account in EPOCH ms
 username | Username of user
-user_uuid | Unqiue identifier of user in Mapillary system
+user_uuid | Unique identifier of user in Mapillary system
 email | Users email if correct scope is authenticated
 
 ## PUT /me
 
-TBD not yet availble.
+TBD not yet available.
 
 ## GET /me/feed
 
@@ -79,7 +79,7 @@ curl "https://a.mapillary.com/v2/me/feed?client_id=<CLIENT_ID>"
 }
 ```
 
-Retrive a users feed.
+Retrieve a users feed.
 
 ### Scopes
 
@@ -103,15 +103,15 @@ Parameter | Description
 --------- | -----------
 feed | Array of events in the feed sorted by newest first
 feed[action] | Action or feed event
-feed[timestamp] | When event happend
-feed[object] | Type of object operetared at
+feed[timestamp] | When event happened
+feed[object] | Type of object operated at
 feed[key] | Key of object
 feed[user] | User responsible for action
 feed[other_use] | Secondary user in action
 feed[image_url] | Link to an image representing the event
 feed[main_description] | Main description
 feed[detail_description] | Longer and more detailed description of event
-feed[location] | Location where event happend
+feed[location] | Location where event happened
 feed[version] | Version of feed event
 
 ## GET /me/uploads/secrets
@@ -133,7 +133,7 @@ curl "https://a.mapillary.com/v2/me/uploads/secrets?client_id=<CLIENT_ID>"
 }
 ```
 
-Retrive user specific hashes to use S3 direct upload for images.
+Retrieve user specific hashes to use S3 direct upload for images.
 
 ### Scopes
 
@@ -151,8 +151,8 @@ Parameter | Description
 --------- | -----------
 images_policy | Policy to upload to Mapillary images S3 folder
 images_hash | Hash to upload to Mapillary images S3 folder
-videos_policy: Policy to upload to Mapillary videos S3 folder
-videos_hash: Hash to upload to Mapillary videos S3 folder
+videos_policy | Policy to upload to Mapillary videos S3 folder
+videos_hash | Hash to upload to Mapillary videos S3 folder
 
 ## GET /me/uploads/status
 
