@@ -28,7 +28,7 @@ state | string | Any value included here will be appended to the redirect URI
 
 ## Finish Authorization
 
-The OAuth2 token endpoint. This endpoint accepts POST requests and is used to provision access tokens once a user has authorized your application.
+The OAuth2 token endpoint (used in the "authorization code" flow, ie. response_type=code). This endpoint accepts POST requests and is used to provision access tokens once a user has authorized your application.
 
 ### HTTP Request
 
