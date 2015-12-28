@@ -22,7 +22,7 @@ Parameter | Type | Description
 --------- | ------- | -----------
 client_id | string | The client id belonging to your application
 redirect_uri | string | The redirect uri you have configured for your application
-response_type | enumeration | (implicit, token)
+response_type | enumeration | (code, token)
 scope | string | The scopes to request from the user using %20 (space) as delimiter
 state | string | Any value included here will be appended to the redirect URI
 
