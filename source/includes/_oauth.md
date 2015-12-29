@@ -14,6 +14,8 @@ http://www.mapillary.com/connect?client_id=<CLIENT_ID>&response_type=token&scope
 
 The OAuth2 authorization endpoint. Your app redirects a user to this endpoint, allowing them to delegate access to their account.
 
+Note that there is a deviation from the specification when you use implicit flow (`response_type=token`). The token will be sent to the `redirect_uri` using query parameters (after `?`) instead of a fragment (after `#`, as the spec requires).
+
 `GET http://www.mapillary.com/connect`
 
 ### Query Parameters
