@@ -1,8 +1,8 @@
 # OAuth
 
-The Mapillary API lets you interact with Mapillary on the behalf of a user. This is achieved by using OAuth 2.0. Mapillary supports the implicit and code flow of the OAuth [2.0 specification](http://tools.ietf.org/html/rfc6749).
+The Mapillary API lets you interact with Mapillary on the behalf of a user. This is achieved by using OAuth 2.0. Mapillary supports the implicit and code flows of the OAuth [2.0 specification](http://tools.ietf.org/html/rfc6749).
 
-Mapillary OAuth tokens do not have any expiration time. The user can at any time revoke the token directly from the settings page..
+Mapillary OAuth tokens do not have any expiration time. The user can at any time revoke the token directly from the settings page.
 
 ## Request Authorization
 
